@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'DotGothic16';
+  src: url("Assets/Fonts/DotGothic16-Regular.ttf") format('truetype');
+}
+
 .App {
   background-image: url("Assets/Images/Background.png");
   background-size: 1280px 720px;
   height: 100vh;
+  padding: 100px;
   image-rendering: pixelated; 
+  font-family: 'DotGothic16';
 }
 
 .App-header {
@@ -13,14 +20,54 @@
   border-left-color: #a8cfda;
   border-bottom-color: #4d6476;
   border-right-color: #4d6476;
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
   color: #decb9f;
 }
+
+.App-header  h1 {
+  text-align: center;
+  font-size: calc(50px + 2vmin);
+  margin: 20px;
+}
+
+.Main-body {
+  display: flex;
+}
+
+.Planet-list {
+  text-align: center;
+  width: 15vw;
+  margin-right: 20px;
+  background-color: #7895ab;
+  border-style: outset;
+  border-width: 10px;
+  border-top-color: #a8cfda;
+  border-left-color: #a8cfda;
+  border-bottom-color: #4d6476;
+  border-right-color: #4d6476;
+
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  line-height: 2;
+  font-size: calc(20px + 2vmin);
+  color: #decb9f;
+}
+
+.Planet-display {
+  width: 85vw;
+}
+
+/* .App-header > h2 {
+  margin: 0px;
+} */
 
 
